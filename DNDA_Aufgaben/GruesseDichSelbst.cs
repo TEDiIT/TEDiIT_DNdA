@@ -2,16 +2,8 @@
 
 public class GruesseDichSelbst
 {
-    private string _name;
-    
-    public GruesseDichSelbst(string name)
+    private void Gruesse(string name)
     {
-        _name = name;
-        Gruesse();
-    }
-
-    private void Gruesse()
-    {
-        Console.WriteLine("Hallo " + _name);
+        Console.WriteLine("Hallo " + name);
     }
 }
