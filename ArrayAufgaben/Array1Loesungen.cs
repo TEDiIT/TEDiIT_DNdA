@@ -1,14 +1,14 @@
-﻿namespace ArrayAufgaben;
+namespace ArrayAufgaben;
 
-public class Array1
+public class Array1Loesungen
 {
     public int FirstValue(int[] arr)
     {
         // Erstelle eine Methode, welche die erste Zahl aus einem Array aus ints zurückgibt
         //
         // FirstValue(new[] {2, 4, 7}) -> 2
-        
-        return 0;
+
+        return arr[0];
     }
     
     public bool FourAppears(int[] arr)
@@ -19,8 +19,13 @@ public class Array1
         //
         // FourAppears(new[] {3 ,4, 5}) -> false
         // FourAppears(new[] {4, 7, 9}) -> true
+
+        if (arr.Length == 0)
+            return false;
         
-        return true;
+        var letzteZahl = arr[arr.Length - 1];
+        
+        return letzteZahl == 4 || arr[0] == 4;
     }
 
     public bool TwoAppears(int[] arr)
@@ -31,6 +36,9 @@ public class Array1
         // TwoAppears(new[] {4, 2}) -> true
         // TwoAppears(new[] {4}) -> false
 
-        return true;
+        if (arr.Length < 2)
+            return false;
+        
+        return arr[1] == 2;
     }
 }

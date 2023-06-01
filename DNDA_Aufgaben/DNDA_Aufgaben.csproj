@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\ArrayAufgaben\ArrayAufgaben.csproj" />
       <ProjectReference Include="..\StringAufgaben\StringAufgaben.csproj" />
     </ItemGroup>
 

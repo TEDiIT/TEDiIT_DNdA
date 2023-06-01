@@ -22,7 +22,5 @@ public class Program
         // Zeichenwerte
         char charWert = 'a';
         string stringWert = "Hallo";
-
-        var testobj = new WarmUpLoesungen();
     }
 }
