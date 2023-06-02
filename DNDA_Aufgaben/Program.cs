@@ -106,12 +106,12 @@ public class Program
 
         int count = 0;
 
-        while (count != 5)
+        while (count < 5)
         {
             // Schleife wird ausgeführt, solange die oben genannte Bedingung wahr ist
             
             count++;    // count wird bei jeder Iteration um 1 erhöht
             Console.WriteLine($"Variable Count beträgt = {count}");
-        }
+        } 
     }
 }
